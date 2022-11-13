@@ -1,0 +1,366 @@
+body, ul, ol, h1, h2, h3, h4, h6, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+ul {
+    list-style-type: none;
+}
+.container {
+    box-sizing: border-box;
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1 {
+    font-size: 4rem;
+}
+.title h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1.25rem;
+}
+
+/* Col */
+
+.col {
+    margin: 0 12px;
+}
+.col-12 {
+    width: 100%;
+}
+.col-10 {
+width: calc(100% * 5 / 6);
+}
+.col-8 {
+width: calc(2 * 100% / 3);
+}
+.col-6 {
+width: 50%;
+}
+.col-5 {
+width: calc(5 * 100% / 12);
+}
+.col-4 {
+width: calc(100% / 3);
+}
+.col-3 {
+width: calc(25%);
+}
+
+/* Font Awesome */
+.fa-arrow-right {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.fa-brands {
+    color: black;
+}
+
+/* Reusable Elements */
+
+.black-button {
+    text-align: center;
+    color: white;
+    padding: 12px 24px;
+    background-color: black;
+    width: fit-content;
+    border-radius: 8px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Navbar */
+
+#navbar {
+    padding: 20px 0;
+    background-color: #ECE8E7;
+}
+#navbar .container {
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+.menu li {
+    list-style: none;
+}
+
+/* Natural twist */
+
+#natural-twist {
+    height: 640px;
+    background-color: #ECE8E7;
+    overflow: hidden;
+    display: flex;
+}
+#natural-twist .container {
+    justify-content: space-between;
+}
+.natural-twist-right {
+    /* width: 50%; */
+    position: relative;
+    top: 35%;
+}
+.natural-twist-left h1 {
+    width: 100px;
+    font-weight: bold;
+}
+.natural-twist-left .h1-container:first-of-type {
+    width: fit-content;
+    position: relative;
+}
+.natural-twist-left .h1-container:first-of-type div {
+    position: absolute;
+    padding: 0 25px;
+    width: 100%;
+    height: 72.8px;
+    background-color: white;
+    transform: translateX(-25px) rotate(-2deg);
+}
+.natural-twist-left .h1-container:first-of-type h1 {
+    position: relative;
+    width: fit-content;
+}
+.natural-twist-left .h1-container:nth-of-type(2) {
+    position: relative;
+    width: fit-content;
+}
+.natural-twist-left .h1-container:nth-of-type(2) div {
+    position: absolute;
+    padding: 0 25px;
+    width: 100%;
+    height: 72.8px;
+    background-color: orange;
+    transform: translateX(-25px) rotate(-2deg);
+}
+.natural-twist-left .h1-container:nth-of-type(2) h1 {
+    position: relative;
+    width: fit-content;
+}
+.natural-twist-left p {
+    font-size: 1.5rem;
+}
+.natural-twist-left img {
+    height: 50px;
+}
+.natural-twist-left .download-buttons {
+    display: flex;
+    gap: 20px;
+}
+.natural-twist-left .download-buttons img {
+    cursor: pointer;
+}
+.natural-twist-right {
+    margin-right: 24px;
+}
+.natural-twist-right img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.natural-twist-right img:hover {
+    filter: drop-shadow(20px -10px 0px white) drop-shadow(20px -10px 0px orange);
+    transition: 0.5s ease-in-out;
+}
+#natural-twist .title p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* New Arrivals */
+
+#new-arrivals {
+    padding-top: 100px;
+}
+#new-arrivals .container:first-child {
+    justify-content: flex-start;
+}
+#new-arrivals .title {
+    margin-bottom: 50px;
+}
+#new-arrivals img {
+    width: 100%;
+}
+#new-arrivals .product-description {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#new-arrivals .product-text h4 {
+    margin-bottom: 10px;
+}
+
+/* Payday Sale */
+
+#payday-sale {
+    height: 730px;
+    margin-top: 100px;
+    background-color: orange;
+    overflow: hidden;
+}
+#payday-sale .container {
+    justify-content: space-between;
+}
+#payday-sale img {
+    width: 100%;
+    filter: drop-shadow(-20px 0px 0px #ece8e7) drop-shadow(-20px 0px 0px white);
+}
+.payday-sale-text .h1-container:first-of-type {
+    width: fit-content;
+    position: relative;
+}
+.payday-sale-text .h1-container:first-of-type div {
+    position: absolute;
+    padding: 0 25px;
+    width: 100%;
+    height: 72.8px;
+    background-color: white;
+    transform: translateX(-25px) rotate(-2deg);
+}
+.payday-sale-text .h1-container:first-of-type h1 {
+    position: relative;
+    width: fit-content;
+}
+#payday-sale .payday-sale-text p {
+    margin: 10px 0;
+}
+
+/* Store */
+
+#store {
+    margin-top: 150px;
+}
+#store .title p {
+    margin: 20px 0;
+}
+#store .store-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+#store .logo {
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    background-color: rgba(100,100,100,0.5);
+
+    display: flex;
+    align-items: center;
+}
+#store .logo img {
+    width: 100%;
+}
+
+/* Young's Favorite Apparel */
+
+#youngs-favorite-apparel {
+    margin-top: 150px;
+}
+#youngs-favorite-apparel .title {
+    margin-bottom: 75px;
+}
+#youngs-favorite-apparel .apparel-image img {
+    width: 100%;
+}
+
+/* Voucher */
+
+#voucher {
+    margin-top: 200px;
+}
+#voucher .download-buttons {
+    display: flex;
+    gap: 10px;
+}
+#voucher .download-buttons img {
+    height: 40px;
+}
+#voucher .title p {
+    margin: 20px 0;
+}
+#voucher .voucher-image img {
+    width: 100%;
+}
+
+/* Community */
+
+#community {
+    margin-top: 200px;
+    background-color: orange;
+    padding: 50px 0;
+}
+#community .title {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+#community .title h2 {
+    margin-bottom: 20px;
+}
+#community .sign-up-box {
+    background-color: white;
+    padding: 6px 6px 6px 16px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    align-items: flex-start;
+}
+#footer .container {
+    justify-content: space-between;
+}
+#footer .rondovision-profile,
+#footer .company ul,
+#footer .quick-link ul,
+#footer .legal ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footer .social-media-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+#footer .social-icon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
