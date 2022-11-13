@@ -19,6 +19,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 .title h1 {
     font-size: 4rem;
@@ -35,9 +36,9 @@ p {
 
 /* Col */
 
-.col {
+/* .col {
     margin: 0 12px;
-}
+} */
 .col-12 {
     width: 100%;
 }
@@ -199,10 +200,20 @@ width: calc(25%);
 #new-arrivals .title {
     margin-bottom: 50px;
 }
+#new-arrivals .new-product:first-child .product-image {
+    background-color: #E9CFE3;
+}
+#new-arrivals .new-product:nth-child(2) .product-image {
+    background-color: #ECE1D5;
+}
+#new-arrivals .new-product:last-child .product-image {
+    background-color: #FFEDE1;
+}
 #new-arrivals img {
     width: 100%;
 }
-#new-arrivals .product-description {
+#new-arrivals .product-description,
+#youngs-favorite-apparel .apparel-description {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -226,7 +237,11 @@ width: calc(25%);
 }
 #payday-sale img {
     width: 100%;
+    transition: 0.5s ease-in-out;
+}
+#payday-sale img:hover {
     filter: drop-shadow(-20px 0px 0px #ece8e7) drop-shadow(-20px 0px 0px white);
+    transition: 0.5s ease-in-out;
 }
 .payday-sale-text .h1-container:first-of-type {
     width: fit-content;
@@ -253,6 +268,9 @@ width: calc(25%);
 #store {
     margin-top: 150px;
 }
+#store .container {
+    justify-content: space-between;
+}
 #store .title p {
     margin: 20px 0;
 }
@@ -265,13 +283,17 @@ width: calc(25%);
     width: 80px;
     height: 80px;
     padding: 40px;
-    background-color: rgba(100,100,100,0.5);
+    background-color: rgba(100,100,100,0.05);
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #store .logo img {
     width: 100%;
+}
+#store .logo:nth-child(3) img {
+    width: 150%;
 }
 
 /* Young's Favorite Apparel */
@@ -282,6 +304,9 @@ width: calc(25%);
 #youngs-favorite-apparel .title {
     margin-bottom: 75px;
 }
+#youngs-favorite-apparel .apparel-image {
+    background-color: rgba(100,100,100,0.1);
+}
 #youngs-favorite-apparel .apparel-image img {
     width: 100%;
 }
@@ -289,7 +314,10 @@ width: calc(25%);
 /* Voucher */
 
 #voucher {
-    margin-top: 200px;
+    margin-top: 100px;
+}
+#voucher .container {
+    justify-content: space-between;
 }
 #voucher .download-buttons {
     display: flex;
@@ -308,7 +336,7 @@ width: calc(25%);
 /* Community */
 
 #community {
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: orange;
     padding: 50px 0;
 }
@@ -328,6 +356,14 @@ width: calc(25%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#community .sign-up-box input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+#community .sign-up-box input::placeholder {
+    font-size: 1rem;
 }
 
 /* Footer */
